@@ -1,56 +1,62 @@
 /**
- * OOPSBannerApp UC3 - OOPS Banner Application (Use Case 3)
- * Refactored using String.join() instead of + operator
+ * OOPSBannerApp UC4 - Render OOPS as Banner using String Array and Loop
  *
  * @author Nakulvasudev T
- * @version 3.0
+ * @version 4.0
  */
 
 public class OOPsBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println(String.join(" ",
+        // Create String array with 7 banner lines
+        String[] lines = new String[7];
+
+        lines[0] = String.join(" ",
                 "  *****  ",
                 "  *****  ",
                 " ********",
-                " ******* "));
+                " ******* ");
 
-        System.out.println(String.join(" ",
+        lines[1] = String.join(" ",
                 " *     * ",
                 " *     * ",
                 " *      *",
-                " *      *"));
+                " *      *");
 
-        System.out.println(String.join(" ",
+        lines[2] = String.join(" ",
                 " *     * ",
                 " *     * ",
                 " *      *",
-                " *       "));
+                " *       ");
 
-        System.out.println(String.join(" ",
+        lines[3] = String.join(" ",
                 " *     * ",
                 " *     * ",
                 " ********",
-                "  ****** "));
+                "  ****** ");
 
-        System.out.println(String.join(" ",
+        lines[4] = String.join(" ",
                 " *     * ",
                 " *     * ",
                 " *       ",
-                "       * "));
+                "       * ");
 
-        System.out.println(String.join(" ",
+        lines[5] = String.join(" ",
                 " *     * ",
                 " *     * ",
                 " *       ",
-                " *      *"));
+                " *      *");
 
-        System.out.println(String.join(" ",
+        lines[6] = String.join(" ",
                 "  *****  ",
                 "  *****  ",
                 " *       ",
-                "  ****** "));
+                "  ****** ");
 
+        // Enhanced for-loop to print each line
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
 }

@@ -1,16 +1,17 @@
 /**
- * OOPSBannerApp UC6 - OOPSBannerApp UC5 - Using static method to print banner
+ * OOPSBannerApp UC7 - OOPSBannerApp UC5 - Using Inner static method to print banner
  * @author Nakulvasudev T
- * @version 6.0
+ * @version 7.0
  */
 
 public class OOPsBannerApp {
         public static void main(String[] args) {
-        System.out.println("OOPS Banner static method:");    
-        printBanner();
+        System.out.println("OOPS Banner Using Innner static method:");    
+        BannerPrinter.printBanner();
         }
 
-    public static void printBanner(){
+        static class BannerPrinter {
+                public static void printBanner(){
 
         // Create String array with 7 banner lines
         String[] lines = {
@@ -27,4 +28,5 @@ public class OOPsBannerApp {
             System.out.println(line);
         }
     }
+}
 }

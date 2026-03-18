@@ -1,12 +1,16 @@
 /**
- * OOPSBannerApp UC4 - OOPSBannerApp UC5 - Inline Array Initialization
+ * OOPSBannerApp UC6 - OOPSBannerApp UC5 - Using static method to print banner
  * @author Nakulvasudev T
- * @version 5.0
+ * @version 6.0
  */
 
 public class OOPsBannerApp {
+        public static void main(String[] args) {
+        System.out.println("OOPS Banner static method:");    
+        printBanner();
+        }
 
-    public static void main(String[] args) {
+    public static void printBanner(){
 
         // Create String array with 7 banner lines
         String[] lines = {
